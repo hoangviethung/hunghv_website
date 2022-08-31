@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <template id="theme_roger_header_default" name="Theme Roger Header Default" inherit_id="website.layout">
+        <xpath expr="//header" position="replace">
+            <!-- Header -->
+            <header id="top" class="main-header">
+                <nav class="navbar header-nav navbar-expand-lg one-page-nav">
+                    <div class="container">
+                        <a class="navbar-brand" href="/#home">
+                            <img src="/theme_roger/static/src/images/logo.svg" title="HOANG-VIET-HUNG" alt="HOANG-VIET-HUNG"/>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle" aria-controls="navbar-collapse-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse-toggle">
+                            <ul class="navbar-nav mx-auto">
+                                <li>
+                                    <a class="nav-link" data-scroll-nav="0" href="/#home">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" data-scroll-nav="1" href="/#services">
+                                        <span>Services</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" data-scroll-nav="2" href="/skill">
+                                        <span>Skills</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" data-scroll-nav="3" href="/work">
+                                        <span>Portfolio</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" data-scroll-nav="4" href="/contactus">
+                                        <span>Contact</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ms-auto d-none d-lg-block">
+                            <a class="px-btn px-btn-theme2" data-scroll-nav="4" href="/contactus">Contact Now</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </xpath>
+    </template>
+    <template id="theme_roger_footer_default" name="template_name" inherit_id="website.layout">
+        <xpath expr="//footer" position="replace">
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 py-2">
+                            <div class="nav justify-content-center justify-content-md-start">
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-behance"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2 text-center text-md-end">
+                            <p class="m-0">© 2022 copyright all right reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </xpath>
+    </template>
+</odoo>

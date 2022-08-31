@@ -1,0 +1,25 @@
+$px-theme: #5c64cf !default;
+$px-theme2: #f7af24 !default;
+
+$px-dark: #18171c !default;
+
+$px-white: #fff !default;
+$px-black: #000 !default;
+
+$px-gray: rgba($px-theme2, 0.1) !default;
+
+$px-font-size: 15px !default;
+$px-line-height: 1.7 !default;
+$px-font: "Rubik", sans-serif !default;
+
+$px-shadow: 0 0.375rem 1.5rem 0 rgba(140, 152, 164, 0.125) !default;
+$px-shadow-sm: 0 12px 15px rgba(140, 152, 164, 0.1) !default;
+
+// Breakpoints
+$px-media-xsm: 567px !default;
+$px-media-sm: 767px !default;
+$px-media-md: 991px !default;
+$px-media-lg: 1200px !default;
+
+$o-we-font-size: 15px !default;
+$o-we-font-family: $px-font;
