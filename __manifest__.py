@@ -1,20 +1,20 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Theme Roger',
-    'summary': 'Theme Roger Version 1.0',
+    'name': 'Personal Website',
+    'summary': 'Personal Website',
     'version': '1.0',
-    'author': 'Roger Hoang',
-    'category': 'Theme',
-    'sequence': 3000,
-    'maintainer': 'Roger Hoang',
-    'company': 'Hygge',
-    'support': 'https://hygge.com',
-    'website': 'https://hygge.com',
+    'author': 'Hoàng Việt Hùng',
+    'category': 'Website',
+    'maintainer': 'Hoàng Việt Hùng',
+    'company': 'Cready',
+    'support': 'https://hunghv.com',
+    'website': 'https://hunghv.com',
     'license': 'LGPL-3',
     'depends': [
         # Odoo
         'website',
     ],
+    'installable': True,
     'data': [
         'views/website_templates.xml',
         'views/home.xml',
@@ -23,36 +23,35 @@
     'assets':{
         'web.assets_frontend': [
             # Library CSS
-            "/theme_roger/static/src/libs/bootstrap/icons/bootstrap-icons.css",
-            "/theme_roger/static/src/libs/owl-carousel/css/owl.carousel.min.css",
-            "/theme_roger/static/src/libs/magnific/magnific-popup.css",
+            "/hunghv_website/static/src/libs/bootstrap/icons/bootstrap-icons.css",
+            "/hunghv_website/static/src/libs/owl-carousel/css/owl.carousel.min.css",
+            "/hunghv_website/static/src/libs/magnific/magnific-popup.css",
             # Website UI Kit
-            "/theme_roger/static/src/scss/mixin.scss",
-            "/theme_roger/static/src/scss/header.scss",
-            "/theme_roger/static/src/scss/footer.scss",
-            "/theme_roger/static/src/scss/button.scss",
-            "/theme_roger/static/src/scss/color.scss",
-            "/theme_roger/static/src/scss/grid.scss",
-            "/theme_roger/static/src/scss/style.scss",
+            "/hunghv_website/static/src/scss/mixin.scss",
+            "/hunghv_website/static/src/scss/header.scss",
+            "/hunghv_website/static/src/scss/footer.scss",
+            "/hunghv_website/static/src/scss/button.scss",
+            "/hunghv_website/static/src/scss/color.scss",
+            "/hunghv_website/static/src/scss/grid.scss",
+            "/hunghv_website/static/src/scss/website.ui.scss",
             # Library JS
-            "/theme_roger/static/src/libs/appear/jquery.appear.js",
-            "/theme_roger/static/src/libs/one-page/jquery.nav.js",
-            "/theme_roger/static/src/libs/one-page/scrollIt.js",
+            "/hunghv_website/static/src/libs/appear/jquery.appear.js",
             # Theme JS
-            "/theme_roger/static/src/js/home.js",
+            "/hunghv_website/static/src/js/home.js",
         ],
         'web._assets_primary_variables': [
-            "/theme_roger/static/src/scss/primary_variables.scss",
-            "/theme_roger/static/src/scss/fonts.scss",
+            "/hunghv_website/static/src/scss/primary_variables.scss",
+            "/hunghv_website/static/src/scss/fonts.scss",
         ],
         'web._assets_secondary_variables': [
-            ('prepend', 'theme_roger/static/src/scss/secondary_variables.scss'),
+            ('prepend', 'hunghv_website/static/src/scss/secondary_variables.scss'),
         ],
         'web._assets_frontend_helpers': [
-            ('prepend', '/theme_roger/static/src/scss/bootstrap_overridden.scss'),
+            ('prepend', '/hunghv_website/static/src/scss/bootstrap_overridden.scss'),
         ],
         'website.assets_wysiwyg': [
             ('include', 'web._assets_helpers'),
         ],
     },
+    'application': True,
 }

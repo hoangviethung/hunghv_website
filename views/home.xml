@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="home" name="HomePage">
+    <template id="hunghv_website.home" name="HomePage">
         <t t-call="website.layout">
             <div id="layout-home-js">
                 <div id="wrap">
                     <t t-raw="0"/>
                     <!-- Home Section -->
-                    <section data-scroll-index="0" class="home-section">
+                    <section id="home" class="home-section">
                         <div class="effect-1">
-                            <img src="/theme_roger/static/src/images/effect-1.svg" title="" alt=""/>
+                            <img src="/hunghv_website/static/src/images/effect-1.svg" title="" alt=""/>
                         </div>
                         <div class="effect-2">
-                            <img src="/theme_roger/static/src/images/effect-2.svg" title="" alt=""/>
+                            <img src="/hunghv_website/static/src/images/effect-2.svg" title="" alt=""/>
                         </div>
                         <div class="container">
                             <div class="row min-vh-100 align-items-center">
                                 <div class="col-lg-6 pe-xl-5 py-5">
-                                    <div class="home-intro one-page-nav">
+                                    <div class="home-intro">
                                         <h6>
                                             <span>Hello.</span>
                                         </h6>
                                         <h1>
-                                            <span>We Have</span>
+                                            <span>Have</span>
                                             <br />
                                             <span>Design</span>
                                             <br />
@@ -29,13 +29,13 @@
                                         </h1>
                                         <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
                                         <div class="btn-bar">
-                                            <a class="px-btn px-btn-theme" data-scroll-nav="4" href="#contactus">Let's Talk</a>
+                                            <a class="px-btn px-btn-theme" data-scroll-nav="" href="/#contactus">Let's Talk</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="home-image">
-                                        <img src="/theme_roger/static/src/images/home-banner.png" title="" alt=""/>
+                                        <img src="/hunghv_website/static/src/images/home-banner.png" title="" alt=""/>
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                     </section>
                     <!-- End Home Section -->
                     <!-- Services Section -->
-                    <section data-scroll-index="1" class="section services-section bg-gray">
+                    <section id="services" class="section services-section bg-gray">
                         <div class="container">
                             <div class="row section-heading">
                                 <div class="col-lg-6">
@@ -145,7 +145,7 @@
                     </section>
                     <!-- End Services Section -->
                     <!-- Skill Section -->
-                    <section data-scroll-index="2" class="section experience-section">
+                    <section id="skill" class="section experience-section">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -203,46 +203,32 @@
                                         <h3>Experience</h3>
                                         <ul>
                                             <li>
-                                                <h6>Jan 2021 - Present</h6>
+                                                <h6>October 2020 - Present</h6>
                                                 <div class="eb-right">
-                                                    <h5>Creative Director</h5>
-                                                    <span>pxdraft Ltd, UK</span>
+                                                    <h5>Product Designer (UX/UI) &amp; Front-end Odoo</h5>
+                                                    <span>BAP IT Co., JSC</span>
                                                 </div>
                                             </li>
                                             <li>
-                                                <h6>Jan 2021 - Present</h6>
+                                                <h6>May 2019 - October 2020</h6>
                                                 <div class="eb-right">
-                                                    <h5>Creative Director</h5>
-                                                    <span>pxdraft Ltd, UK</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <h6>Jan 2021 - Present</h6>
-                                                <div class="eb-right">
-                                                    <h5>Creative Director</h5>
-                                                    <span>pxdraft Ltd, UK</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <h6>Jan 2021 - Present</h6>
-                                                <div class="eb-right">
-                                                    <h5>Creative Director</h5>
-                                                    <span>pxdraft Ltd, UK</span>
+                                                    <h5>Front-end Developer</h5>
+                                                    <span>WEB4G Solutions</span>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="experience-user">
                                         <span class="eu-1">
-                                            <img src="/theme_roger/static/src/images/effect-3.svg" title="" alt=""/>
+                                            <img src="/hunghv_website/static/src/images/effect-3.svg" title="" alt=""/>
                                         </span>
                                         <span class="eu-2">
-                                            <img src="/theme_roger/static/src/images/effect-4.svg" title="" alt=""/>
+                                            <img src="/hunghv_website/static/src/images/effect-4.svg" title="" alt=""/>
                                         </span>
                                         <div class="avatar">
-                                            <img src="/theme_roger/static/src/images/avatar.png" title="" alt=""/>
+                                            <img src="/hunghv_website/static/src/images/avatar.jpeg" title="HOÀNG VIỆT HÙNG" alt="HOANG-VIET-HUNG"/>
                                         </div>
-                                        <a class="px-btn px-btn-theme2" href="#">Hire me </a>
+                                        <a class="px-btn px-btn-theme2" href="#">Download CV</a>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +236,7 @@
                     </section>
                     <!-- End Skill Section -->
                     <!-- Work Section -->
-                    <section data-scroll-index="3" class="section work-section bg-gray">
+                    <section id="work" class="section work-section bg-gray">
                         <div class="container">
                             <div class="row section-heading">
                                 <div class="col-lg-6">
@@ -267,7 +253,7 @@
                                     <div class="portfolio-box">
                                         <div class="portfolio-img">
                                             <a href="assets/img/project-1.jpg" class="gallery-link">
-                                                <img src="/theme_roger/static/src/images/project-1.jpg" title="" alt=""/>
+                                                <img src="/hunghv_website/static/src/images/project-1.jpg" title="" alt=""/>
                                             </a>
                                         </div>
                                         <div class="portfolio-info">
@@ -283,7 +269,7 @@
                                     <div class="portfolio-box">
                                         <div class="portfolio-img">
                                             <a href="assets/img/project-1.jpg" class="gallery-link">
-                                                <img src="/theme_roger/static/src/images/project-1.jpg" title="" alt=""/>
+                                                <img src="/hunghv_website/static/src/images/project-1.jpg" title="" alt=""/>
                                             </a>
                                         </div>
                                         <div class="portfolio-info">
@@ -299,7 +285,7 @@
                                     <div class="portfolio-box">
                                         <div class="portfolio-img">
                                             <a href="assets/img/project-1.jpg" class="gallery-link">
-                                                <img src="/theme_roger/static/src/images/project-1.jpg" title="" alt=""/>
+                                                <img src="/hunghv_website/static/src/images/project-1.jpg" title="" alt=""/>
                                             </a>
                                         </div>
                                         <div class="portfolio-info">
@@ -315,7 +301,7 @@
                                     <div class="portfolio-box">
                                         <div class="portfolio-img">
                                             <a href="assets/img/project-1.jpg" class="gallery-link">
-                                                <img src="/theme_roger/static/src/images/project-1.jpg" title="" alt=""/>
+                                                <img src="/hunghv_website/static/src/images/project-1.jpg" title="" alt=""/>
                                             </a>
                                         </div>
                                         <div class="portfolio-info">
@@ -331,7 +317,7 @@
                                     <div class="portfolio-box">
                                         <div class="portfolio-img">
                                             <a href="assets/img/project-1.jpg" class="gallery-link">
-                                                <img src="/theme_roger/static/src/images/project-1.jpg" title="" alt=""/>
+                                                <img src="/hunghv_website/static/src/images/project-1.jpg" title="" alt=""/>
                                             </a>
                                         </div>
                                         <div class="portfolio-info">
@@ -347,7 +333,7 @@
                                     <div class="portfolio-box">
                                         <div class="portfolio-img">
                                             <a href="assets/img/project-1.jpg" class="gallery-link">
-                                                <img src="/theme_roger/static/src/images/project-1.jpg" title="" alt=""/>
+                                                <img src="/hunghv_website/static/src/images/project-1.jpg" title="" alt=""/>
                                             </a>
                                         </div>
                                         <div class="portfolio-info">
@@ -379,7 +365,7 @@
                             <div class="owl-carousel lightbox-gallery" data-items="3" data-nav-dots="true" data-lg-items="2" data-md-items="2" data-sm-items="1" data-xs-items="1" data-space="30" data-autoplay="true">
                                 <div class="feature-box-03">
                                     <div class="feature-img">
-                                        <img src="/theme_roger/static/src/images/avatar-1.jpg" title="" alt=""/>
+                                        <img src="/hunghv_website/static/src/images/avatar-1.jpg" title="" alt=""/>
                                     </div>
                                     <div class="feature-content">
                                         <div class="icons">
@@ -392,7 +378,7 @@
                                 </div>
                                 <div class="feature-box-03">
                                     <div class="feature-img">
-                                        <img src="/theme_roger/static/src/images/avatar-1.jpg" title="" alt=""/>
+                                        <img src="/hunghv_website/static/src/images/avatar-1.jpg" title="" alt=""/>
                                     </div>
                                     <div class="feature-content">
                                         <div class="icons">
@@ -405,7 +391,7 @@
                                 </div>
                                 <div class="feature-box-03">
                                     <div class="feature-img">
-                                        <img src="/theme_roger/static/src/images/avatar-1.jpg" title="" alt=""/>
+                                        <img src="/hunghv_website/static/src/images/avatar-1.jpg" title="" alt=""/>
                                     </div>
                                     <div class="feature-content">
                                         <div class="icons">
@@ -418,7 +404,7 @@
                                 </div>
                                 <div class="feature-box-03">
                                     <div class="feature-img">
-                                        <img src="/theme_roger/static/src/images/avatar-1.jpg" title="" alt=""/>
+                                        <img src="/hunghv_website/static/src/images/avatar-1.jpg" title="" alt=""/>
                                     </div>
                                     <div class="feature-content">
                                         <div class="icons">
@@ -434,7 +420,7 @@
                     </section>
                     <!-- End testimonial Section -->
                     <!-- Contact Section -->
-                    <section data-scroll-index="4" id="contactus" class="section contactus-section bg-gray">
+                    <section id="contactus" class="section contactus-section bg-gray">
                         <div class="container">
                             <div class="row section-heading">
                                 <div class="col-lg-6">
@@ -511,17 +497,15 @@
                                                 <i class="fa fa-map-marker"></i>
                                             </div>
                                             <div class="col">
-                                                <h5>Visit My Studio</h5>
+                                                <h5>Address</h5>
                                                 <p>
-                                                    <span>Warnwe Park Streetperrine,</span>
-                                                    <br/>
-                                                    <span>FL 33157 New York City</span>
+                                                    <span>Ho Chi Minh City</span>
                                                 </p>
                                             </div>
                                         </li>
                                     </ul>
                                     <div class="text-center pt-5">
-                                        <img src="/theme_roger/static/src/images/contact.svg" title="" alt=""/>
+                                        <img src="/hunghv_website/static/src/images/contact.svg" title="" alt=""/>
                                     </div>
                                 </div>
                             </div>

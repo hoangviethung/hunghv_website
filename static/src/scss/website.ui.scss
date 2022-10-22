@@ -1,7 +1,5 @@
-@media (prefers-reduced-motion: no-preference) {
-    :root {
-        scroll-behavior: inherit;
-    }
+#wrapwrap {
+    scroll-behavior: smooth;
 }
 
 img {
@@ -147,7 +145,7 @@ main {
             padding-bottom: 15px;
             &:after {
                 content: "";
-                background-image: url("/theme_roger/static/src/images/title.svg");
+                background-image: url("/hunghv_website/static/src/images/title.svg");
                 position: absolute;
                 bottom: 0;
                 right: 0;

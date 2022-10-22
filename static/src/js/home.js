@@ -10,7 +10,7 @@ odoo.define("theme_25fit.layout_home_js", function (require) {
             (function ($) {
                 "use strict";
                 var WEA = {};
-                var plugin_track = "theme_roger/static/src/libs/";
+                var plugin_track = "hunghv_website/static/src/libs/";
                 $.fn.exists = function () {
                     return this.length > 0;
                 };
@@ -61,6 +61,45 @@ odoo.define("theme_25fit.layout_home_js", function (require) {
                         $("body").removeClass("fixed-header");
                     }
                 };
+
+                WEA.HeaderActiveNavbar = function () {
+                    const url = window.location.href;
+                    const id = url.substring(url.lastIndexOf("/") + 1);
+                    if (id) {
+                        $.each($("#top_menu .nav-link"), function (index, el) {
+                            if ($(el).attr("href") == `/${id}`) {
+                                $(this).addClass("active");
+                            }
+                        });
+                    } else {
+                        $("#top_menu .nav-link").eq(0).addClass("active");
+                    }
+                };
+
+                WEA.OnClickNavbar = function () {
+                    $("#top_menu .nav-link, [data-scroll-nav]").on(
+                        "click",
+                        function (e) {
+                            const id = $(this).attr("href");
+                            console.log(id);
+                            if (id) {
+                                $.each(
+                                    $("#top_menu .nav-link"),
+                                    function (index, el) {
+                                        if ($(el).attr("href") == `${id}`) {
+                                            $(this).addClass("active");
+                                            $("#top_menu .nav-link")
+                                                .not(this)
+                                                .removeClass("active");
+                                        }
+                                    },
+                                );
+                            }
+                        },
+                    );
+                };
+
+                WEA.OnScrollPage = function () {};
 
                 /*--------------------
                 * OwlSlider
@@ -296,24 +335,6 @@ odoo.define("theme_25fit.layout_home_js", function (require) {
                     }
                 };
 
-                WEA.one_page = function () {
-                    //var HHeight = $('.navbar').outerHeight();
-                    var $one_page_nav = $(".one-page-nav");
-                    if ($one_page_nav.length > 0) {
-                        $one_page_nav.each(function () {
-                            $.scrollIt({
-                                upKey: 38, // key code to navigate to the next section
-                                downKey: 40, // key code to navigate to the previous section
-                                easing: "linear", // the easing function for animation
-                                scrollTime: 600, // how long (in ms) the animation takes
-                                activeClass: "active", // class given to the active nav element
-                                onPageChange: null, // function(pageIndex) that is called when page is changed
-                                topOffset: -70, // offste (in px) for fixed top navigation
-                            });
-                        });
-                    }
-                };
-
                 /* ---------------------------------------------- /*
                * All Functions
               /* ---------------------------------------------- */
@@ -350,8 +371,9 @@ odoo.define("theme_25fit.layout_home_js", function (require) {
                         WEA.Gallery(),
                         WEA.ProgressBar(),
                         WEA.mTypeIt(),
-                        WEA.one_page(),
                         WEA.Owl(),
+                        WEA.HeaderActiveNavbar(),
+                        WEA.OnClickNavbar(),
                         $('[data-toggle="tooltip"]').tooltip({
                             trigger: "hover",
                         });
